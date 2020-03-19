@@ -37,11 +37,10 @@ To form the combined HOG-LBP feature, simply concatenate the HOG and LBP feature
 Implement a fully-connected two-layer perceptron with an input layer of size N, with N being the size of the input feature vector, a hidden layer of size H and an output layer of size 1. Let H=200 and 400 and report the training and classification results for each. (Optional: you can try other hidden layer sizes and report the results if you get better results than the two above.) Use the ReLU activation function for neurons in the hidden layer and the Sigmoid function for the output neuron. The Sigmoid function will ensure that the output is within the range [0,1], which can be interpreted as the probability of having detected human in the image. Use the weight updating rules we covered in lecture for the training of the two-layer perceptron. Use random initialization to initialize the weights of the perceptron. Assign an output label of 1.0 for training images containing human and 0.0 for training images with no human. You can experiment with and decide on the learning rate to use (can try 0.1 first.) After each epoch of training, compute the average error from the errors of individual training samples. The error for an individual training sample =|correct output-network output|, with the correct output equals 1.0 for positive samples and 0.0 for negative samples. You can stop training when the change in average error between consecutive epochs is less than some threshold (e.g., 0.1) or when the number of epochs is more than some maximum (e.g., 1000.) After training, you can use the perceptron to classify the test images. Use the following rules for classification:
 
 ### Perceptron Output Classification
-≥0.6 - human
 
->0.4 and <0.6 - borderline
-
-≤0.4 - no-human
+* ≥0.6 - human
+* >0.4 and <0.6 - borderline
+* ≤0.4 - no-human
 
 ### Training and test images
 A set of 20 training images and a set of 10 test images in .bmp format will be provided. The training set contains 10 positive (human) and 10 negative (no human) samples and the test set contains 5 positive and 5 negative samples. All images are of size 160 (height) X 96 (width).
