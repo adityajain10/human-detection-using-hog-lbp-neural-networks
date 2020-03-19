@@ -38,7 +38,9 @@ Implement a fully-connected two-layer perceptron with an input layer of size N, 
 
 ### Perceptron Output Classification
 ≥0.6 - human
+
 >0.4 and <0.6 - borderline
+
 ≤0.4 - no-human
 
 ### Training and test images
