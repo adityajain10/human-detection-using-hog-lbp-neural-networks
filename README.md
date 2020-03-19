@@ -1,0 +1,2 @@
+# Human-Detection-HOG-LBP-
+Programs uses HOG (Histograms of Oriented Gradients) and LBP (Local Binary Pattern) features to detect human in images. First, you will use the HOG feature only to detect humans.  Next, you will combine the HOG feature with the LBP feature to form an augmented feature (HOG-LBP) to detect human. A Two-Layer Perceptron (feedforward neural network) will be used to classify the input feature vector into human or no-human.  
