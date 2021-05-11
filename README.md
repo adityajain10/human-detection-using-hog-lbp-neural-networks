@@ -39,9 +39,9 @@ Implement a fully-connected two-layer perceptron with an input layer of size N, 
 
 ### Perceptron Output Classification
 
-* ≥0.6 - human
-* >0.4 and <0.6 - borderline
-* ≤0.4 - no-human
+	* ≥0.6 - human
+	* >0.4 and <0.6 - borderline
+	* ≤0.4 - no-human
 
 ### Training and test images
 A set of 20 training images and a set of 10 test images in .bmp format will be provided. The training set contains 10 positive (human) and 10 negative (no human) samples and the test set contains 5 positive and 5 negative samples. All images are of size 160 (height) X 96 (width).
